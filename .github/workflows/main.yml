@@ -33,4 +33,4 @@ jobs:
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           source: "dist/electronic-invoice/browser/*"
           target: ${{ secrets.TARGET_PATH }}
-          strip_components: 1
+          strip_components: 3
