@@ -1,1 +1,25 @@
 /* You can add global styles to this file, and also import other style files */
+@import "tailwindcss";
+
+@font-face {
+  font-family: "Onest";
+  src: url(/Onest.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Geist";
+  src: url(/Geist.ttf) format("truetype");
+}
+
+@theme {
+  --font-sans: "Onest", "sans-serif";
+  /* --font-serif: "Geist", "serif"; */
+}
+
+@layer components {
+  h1 {
+    font-size: var(--text-2xl);
+    font-weight: var(--font-weight-semibold);
+    /* color: var(--color-green-600); */
+  }
+}
